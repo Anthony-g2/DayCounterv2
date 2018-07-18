@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Day Counter v^2</title>
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js"></script>
+  </head>
+  <body>
+
+    <div id="header" class="space">
+      <h1> Day Counter v2</h1>
+    </div>
+    <div id="section">
+      <div id="form">
+        <p class="small"> You can either type out your date (MM/DD/YYYY) or click on the input boxes below. For years less than 100, use 0's as space holders (ex. 0001-0099) </p>
+          <div class="holder">
+            <label for="first" class="space">First Date</label>
+            <br>
+            <input type="date" name="first" id="date1" class="space">
+          </div>
+        <div class="holder">
+          <label for="second" class="space">Second Date</label>
+          <br>
+          <input type="date" name="second" id="date2" class="space">
+        </div>
+        <br>
+        <button type="button" onclick="handleForm()">Submit</button>
+      <div>
+      <div id="ans"></div>
+    </div>
+    <div id="footer">
+      <p>&copy; Copyright ; Made with &#9825;</p>
+    </div>
+  </body>
+</html>
