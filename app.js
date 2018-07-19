@@ -2,21 +2,21 @@
 window.onload = function () {
   document.getElementById("date1").addEventListener("change", function() {
       let input = this.value;
-      var dateEntered1 = new Date(input);
   });
   document.getElementById("date2").addEventListener("change", function() {
       let input = this.value;
-      var dateEntered2 = new Date(input);
   });
 }
 
 function handleForm() {
-  let fdate = new Date(document.getElementById("date1").value).getTime(),
-      sdate = new Date(document.getElementById("date2").value).getTime(),
+  let date1 = document.getElementById("date1").value,
+      date2 = document.getElementById("date2").value,
+      fdate = new Date(date1).getTime(),
+      sdate = new Date(date2).getTime(),
       days = formatNumbers((sdate - fdate) / 86400000),
       hours = formatNumbers((sdate - fdate) / 3600000),
       format = `${days} ${days > 1 ? 'days' : 'day'} or ${hours} hours`;
-  if (isNaN(days)) {
+  if (!date1 || !date2) {
     results("Please use valid dates!", true);
   } else if (fdate > sdate) {
     results("First date must be older than second date!", true);
