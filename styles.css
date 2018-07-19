@@ -1,10 +1,10 @@
 body {
-  background-color: #c9b084;
+  background-color: ghostwhite;
   letter-spacing: .1rem;
 }
 
 #header, #section, #footer {
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 #header {
@@ -72,14 +72,14 @@ button {
   border: none;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  background-color: black;
+  background-color: slategrey;
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   margin-top: 2rem;
 }
 button:hover {
-  background-color: darkgrey;
+  background-color: black;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
